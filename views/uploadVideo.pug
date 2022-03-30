@@ -1,0 +1,44 @@
+doctype html
+head
+  title Home
+  link(rel='stylesheet' href='css/style.css')
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous')
+.content
+  nav.sidebar
+    ul.nav-side
+      li.nav-side__item.nav-side__item
+        a.nav-side__link(href='/home')
+          i.fas.fa-video.nav-side__icon
+          span Videos
+      li.nav-side__item.nav-side__item
+        a.nav-side__link(href='/myVideos')
+          i.fas.fa-file-invoice.nav-side__icon
+          span My Videos
+      li.nav-side__item.nav-side__item
+        a.nav-side__link(href='/uploadVideo')
+          i.fas.fa-plus.nav-side__icon
+          span Upload Video
+      li.nav-side__item.nav-side__item
+        button.logoutbtn.nav-side__link
+          i.fas.fa-sign-out-alt.nav-side__icon
+          span Logout
+    .legal
+      | &copy; 2021 to Anand. All rights reserved.
+  main.view
+    .form__container
+      form.form
+        .form__group
+          label(for='') Name
+          input#name(type='text')
+        .form__group
+          label(for='') Video
+          input#videoName(type='file')
+        .form__group
+          button.form__btn.uploadBtn(type='submit') Upload
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js')      
+script(src='/js/alert.js')
+script(src='/js/logout.js')
+script(src='/js/uploadVideo.js')

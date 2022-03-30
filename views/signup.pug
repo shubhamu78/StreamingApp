@@ -1,0 +1,30 @@
+doctype html
+head
+  title Login
+  link(rel='stylesheet' href='css/style.css')
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+section.section__loginForm
+  .container
+    form.loginForm(action='')
+      .loginForm__group
+        label(for='') Name 
+        input#name(type='text')
+      .loginForm__group
+        label(for='') Email
+        input#email(type='text')
+      .loginForm__group
+        label(for='') Password
+        input#password(type='password' autocomplete='off')
+      .loginForm__group
+        label(for='') Password Confirm
+        input#passwordConfirm(type='password' autocomplete='off')
+      .loginForm__group
+        button.loginBtn(type='submit') Signup
+        a.link1(href='/signup') Don't Have an Account?
+  .footer
+    h3
+      | &copy; 2021 To Anand. All Rights Reserved
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js')
+  script(src='/js/signup.js')
+  script(src='/js/alert.js')

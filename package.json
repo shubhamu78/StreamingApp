@@ -1,0 +1,45 @@
+{
+  "name": "covid",
+  "version": "1.0.0",
+  "description": "Landing Page for natours",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:prod": "set NODE_ENV=production && nodemon server.js"
+  },
+  "author": "Anand",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "concat": "^1.0.3",
+    "dev-server": "^0.1.0",
+    "devserver": "^0.2.5",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "express-rate-limit": "^5.2.3",
+    "helmet": "^4.4.1",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.13",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "slugify": "^1.4.6",
+    "validator": "^13.5.2",
+    "xss-clean": "^0.1.1"
+  },
+  "engines": {
+    "node": "14.15.4"
+  }
+}

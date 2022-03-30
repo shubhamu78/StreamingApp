@@ -1,0 +1,26 @@
+order {
+    userId: req.user.id,
+    userDetails: {
+        type: mongooe.Schema.Object,
+        ref:'Users'
+    },
+    address: {
+        type: mongoose.Schema.Object,
+        ref:'Address'
+    },
+    cart: {
+        Yaha pe Pura Cart Push Krna Padega
+    }
+}
+
+sciencedirect.com
+ieeexplore.com
+springerlink.com
+acm journals
+taylor and francis
+scihubtw.tw
+
+set of Features,
+data collected,
+methodology,
+performance/result
